@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST HTML </title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the BLAH BLAH</h1>
+    </header>
+
+    <main>
+        <p>This page is built for testing  purposes.</p>
+        
+        <form id="testForm">
+            <label for="name">TEST ME:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div id="message" style="margin-top: 20px; display: none; color: green; font-weight: bold;">
+            submitted form
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('testForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+
+    <footer>
+        <p>&copy; Here we Go</p>
+    </footer>
+</body>
+</html>
